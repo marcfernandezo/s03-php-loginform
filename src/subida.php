@@ -9,7 +9,6 @@
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_FILES['archivo']) && $_FILES['archivo']['error'] == UPLOAD_ERR_OK) {
-
             $nombreArchivo = $_FILES['archivo']['name'];
             $tamanoArchivo = $_FILES['archivo']['size'];
             $rutaTemporal = $_FILES['archivo']['tmp_name'];

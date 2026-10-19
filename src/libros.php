@@ -7,23 +7,49 @@
 <body>
     <h2>Gestión de Libros con POO</h2>
     <?php
-    class Libro {
+
+    class Libro
+    {
         private $titulo;
         private $autor;
         private $anio_publicacion;
         private $numero_paginas;
 
         // Métodos para establecer (setters)
-        public function setTitulo($titulo) { $this->titulo = $titulo; }
-        public function setAutor($autor) { $this->autor = $autor; }
-        public function setAnioPublicacion($anio) { $this->anio_publicacion = $anio; }
-        public function setNumeroPaginas($paginas) { $this->numero_paginas = $paginas; }
+        public function setTitulo($titulo)
+        {
+            $this->titulo = $titulo;
+        }
+        public function setAutor($autor)
+        {
+            $this->autor = $autor;
+        }
+        public function setAnioPublicacion($anio)
+        {
+            $this->anio_publicacion = $anio;
+        }
+        public function setNumeroPaginas($paginas)
+        {
+            $this->numero_paginas = $paginas;
+        }
 
         // Métodos para obtener (getters)
-        public function getTitulo() { return $this->titulo; }
-        public function getAutor() { return $this->autor; }
-        public function getAnioPublicacion() { return $this->anio_publicacion; }
-        public function getNumeroPaginas() { return $this->numero_paginas; }
+        public function getTitulo()
+        {
+            return $this->titulo;
+        }
+        public function getAutor()
+        {
+            return $this->autor;
+        }
+        public function getAnioPublicacion()
+        {
+            return $this->anio_publicacion;
+        }
+        public function getNumeroPaginas()
+        {
+            return $this->numero_paginas;
+        }
     }
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

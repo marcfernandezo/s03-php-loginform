@@ -30,13 +30,13 @@ $passwordPredefinido = "12345";
     }
 
     if (!isset($_SESSION['user_id']) && $_SERVER["REQUEST_METHOD"] != "POST") {
-    ?>
+        ?>
         <form method="POST" action="">
             Nombre de usuario: <input type="text" name="usuario" required><br><br>
             Contraseña: <input type="password" name="password" required><br><br>
             <button type="submit">Iniciar Sesión</button>
         </form>
-    <?php
+        <?php
     }
     ?>
 </body>

@@ -48,7 +48,9 @@
             echo "Fecha de nacimiento: " . htmlspecialchars($fecha) . "<br><br>";
         } else {
             echo "<ul style='color:red;'>";
-            foreach ($errores as $error) { echo "<li>$error</li>"; }
+            foreach ($errores as $error) {
+                echo "<li>$error</li>";
+            }
             echo "</ul>";
         }
     }
