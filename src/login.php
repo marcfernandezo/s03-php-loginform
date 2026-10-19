@@ -21,7 +21,9 @@ $passwordPredefinido = "12345";
         if ($usuario === $usuarioPredefinido && $password === $passwordPredefinido) {
             // Añadir a $_SESSION un id fijo
             $_SESSION['user_id'] = 999;
-            echo "<p style='color:green;'>¡Bienvenido, $usuario! Has iniciado sesión correctamente (ID: " . $_SESSION['user_id'] . ").</p>";
+            echo "<p style='color:green;'>¡Bienvenido,
+             $usuario! Has iniciado sesión correctamente (ID: "
+             . $_SESSION['user_id'] . ").</p>";
         } else {
             // Mensaje de error y opción de intentarlo de nuevo
             echo "<p style='color:red;'>Error: Usuario o contraseña incorrectos.</p>";

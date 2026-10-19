@@ -7,7 +7,7 @@
 <body>
     <h2>Gestión de Libros con POO</h2>
     <?php
-
+    namespace Libros;
     class Libro
     {
         private $titulo;
